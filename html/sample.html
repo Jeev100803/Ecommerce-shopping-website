@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoes Collection</title>
+  <link rel="stylesheet" href="../css/sample.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+
+
+    <div class="nav-left">
+      <button>Login</button>
+      <button>Signup</button>
+    </div>
+
+
+    <div class="nav-center">
+      <input type="text" id="search-input" placeholder="Search shoes..." />
+      <button id="search-btn">Search</button>
+    </div>
+
+
+    <div class="nav-right">
+      <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </nav>
+
+  <div class="carousel">
+
+    
+    <button class="carousel-btn left">&#10094;</button>
+    <div class="carousel-images">
+      <img src="shoes1.jpg" alt="Shoes 1" class="carousel-image">
+      <img src="shoes2.jpg" alt="Shoes 2" class="carousel-image">
+      <img src="shoes3.jpg" alt="Shoes 3" class="carousel-image">
+    </div>
+
+    <button class="carousel-btn right">&#10095;</button>
+  </div>
+
+
+
+  <div class="product-container">
+
+    <!-- Sample Product -->
+    <div class="product-box"> 
+      <img src="shoes-product1.jpg" alt="Shoes Product 1">
+      <div class="product-buttons">
+        <button>Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <!-- Duplicate this div for more products as needed -->
+    <!-- ... repeated for 8 products ... -->
+  </div>
+
+  <script src="shoes.js"></script>
+</body>
+</html>

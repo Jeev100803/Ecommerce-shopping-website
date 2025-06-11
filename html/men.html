@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men Collection</title>
+  <link rel="stylesheet" href="../css/men.css">
+</head>
+<body>
+
+
+  <nav class="navbar">
+
+
+    <div class="nav-left">
+      <a href="login.html"><button>Login</button></a>
+      <a href="signup.html"><button>Signup</button></a>
+    </div>
+
+
+
+    <div class="nav-center">
+      <input type="text" id="inpu" placeholder="Search the Product..." onkeyup="filterProducts()">
+    </div>
+
+
+
+    <div class="nav-right">
+      <a href="../html/cart.html"><button id="cart-btn">Cart</button></a>
+    </div>
+  </nav>
+
+
+
+  <div class="carousel">
+
+    <button class="carousel-btn left">&#10094;</button>
+
+    <div class="carousel-images">
+      <img src="../images/men/c1.jpg" alt="Men 1" class="carousel-image">
+      <img src="../images/men/c2.jpg" alt="Men 2" class="carousel-image">
+      <img src="../images/men/c3.jpg" alt="Men 3" class="carousel-image">
+    </div>
+
+    <button class="carousel-btn right">&#10095;</button>
+
+  </div>
+
+
+
+  <div class="product-container">
+    <!-- Example Product Card (repeat 8 total) -->
+
+    <div class="product-box card">
+      <img src="../images/men/img1.jpeg" alt="Men Product 1">
+      <h3>US Polo</h3>
+      <p>High quality pure cotton shirts.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('US Polo','High quality pure cotton shirts.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img1.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <!-- Repeat 7 more with class="product-box card" and same structure -->
+    <!-- ... copy/paste your other products and just wrap title in <h3> and description in <p> -->
+      <div class="product-box card">
+      <img src="../images/men/img2.jpeg" alt="Men Product 2">
+      <h3>PeterEngland</h3>
+      <p>Perfect Traditional Wear for every occasion.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('PeterEngland','Perfect Traditional Wear for every occasion.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img2.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/men/img3.jpeg" alt="Men Product 3">
+      <h3>AllenSolly</h3>
+      <p>High quality Casuals.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('AllenSolly','High quality Casuals.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img3.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/men/img4.jpeg" alt="Men Product 4">
+      <h3>Wrangler</h3>
+      <p>Pure Cotton formals that gives you best office look.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('Wrangler','Pure Cotton formals that gives you best office look.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img4.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/men/img5.jpeg" alt="Men Product 5">
+      <h3>Jockey</h3>
+      <p>Good quality raincoat.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('Jockey','Good quality raincoat.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img5.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/men/img6.jpeg" alt="Men Product 6">
+      <h3>LouisPhillipe</h3>
+      <p>High quality raincoats.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('LouisPhillipe','High quality raincoats.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img6.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/men/img7.jpeg" alt="Men Product 7">
+      <h3>Arrow</h3>
+      <p>Pure 100% cotton Tshirt</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('Arrow','Pure 100% cotton Tshirt','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img7.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/men/img8.jpeg" alt="Men Product 8">
+      <h3>Raymonds</h3>
+      <p>Best Dress Materials all time.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('Raymonds','Best Dress Materials all time.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img8.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+
+  <button id="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">&#8679;</button>
+  
+  <script src="../javascript/men.js"></script>
+</body>
+</html>
+

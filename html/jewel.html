@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jewelry Collection</title>
+  <link rel="stylesheet" href="../css/jewel.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+
+
+    <div class="nav-left">
+      <a href="login.html"><button>Login</button></a>
+      <a href="signup.html"><button>Signup</button></a>
+    </div>
+
+
+    <div class="nav-center">
+      <input type="text" id="inpu" placeholder="Search the Product..." onkeyup="filterProducts()">
+    </div>
+
+
+    <div class="nav-right">
+      <a href="../html/cart.html"><button id="cart-btn">Cart</button></a>
+    </div> 
+  </nav>
+
+
+  <div class="carousel">
+
+
+    <button class="carousel-btn left">&#10094;</button>
+    <div class="carousel-images">
+      <img src="../images/jewel/c1.jpg" alt="Men 1" class="carousel-image">
+      <img src="../images/jewel/c2.jpg" alt="Men 2" class="carousel-image">
+      <img src="../images/jewel/c3.jpg" alt="Men 3" class="carousel-image">
+    </div>
+
+    <button class="carousel-btn right">&#10095;</button>
+  </div>
+
+
+  <div class="product-container">
+
+    <!-- Example Product Card (repeat 8 total) -->
+    <div class="product-box card">
+      <img src="../images/jewel/img1.jpeg" alt="Men Product 1">
+      <h3>US Polo</h3>
+      <p>High quality item perfect for every use.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('US Polo','High quality item perfect for every use.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img1.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <!-- Repeat 7 more with class="product-box card" and same structure -->
+    <!-- ... copy/paste your other products and just wrap title in <h3> and description in <p> -->
+      <div class="product-box card">
+      <img src="../images/jewel/img2.jpeg" alt="Men Product 2">
+      <h3>PeterEngland</h3>
+      <p>High quality item perfect for every use.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('PeterEngland','High quality item perfect for every use.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img2.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/jewel/img3.jpeg" alt="Men Product 3">
+      <h3>AllenSolly</h3>
+      <p>High quality item perfect for every use.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('AllenSolly','High quality item perfect for every use.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img3.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/jewel/img4.jpeg" alt="Men Product 4">
+      <h3>Wrangler</h3>
+      <p>High quality item perfect for every use.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('Wrangler','High quality item perfect for every use.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img4.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/jewel/img5.jpeg" alt="Men Product 5">
+      <h3>Jockey</h3>
+      <p>High quality item perfect for every use.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('Jockey','High quality item perfect for every use.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img5.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/jewel/img6.jpeg" alt="Men Product 6">
+      <h3>LouisPhillipe</h3>
+      <p>High quality item perfect for every use.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('LouisPhillipe','High quality item perfect for every use.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img6.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/jewel/img7.jpeg" alt="Men Product 7">
+      <h3>Arrow</h3>
+      <p>High quality item perfect for every use.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('Arrow','High quality item perfect for every use.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img7.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-box card">
+      <img src="../images/jewel/img8.jpeg" alt="Men Product 8">
+      <h3>Raymonds</h3>
+      <p>High quality item perfect for every use.</p>
+      <div class="product-buttons">
+        <button class="btn-buy" onclick="payment()">Buy Now</button>
+        <button onclick="addToCart('Raymonds','High quality item perfect for every use.','file:///C:/Users/ABHISHEK/OneDrive/Desktop/internship%20project/Images/men/img8.jpeg')">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+
+  <button id="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">&#8679;</button>
+  
+  <script src="../javascript/jewel.js"></script>
+</body>
+</html>
+
